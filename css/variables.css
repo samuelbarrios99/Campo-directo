@@ -1,0 +1,26 @@
+/*
+  Variables de diseño de CampoDirecto — fuente única de verdad.
+  Ambas páginas (index, registro) importan este archivo para
+  compartir colores y tipografías sin duplicarlas.
+*/
+:root {
+  --paper: #F3EEDD;
+  --paper-alt: #ECE4CC;
+
+  --ink: #21281B;
+  --ink-soft: #4A5240;
+
+  --green: #2F5233;
+  --green-deep: #203A24;
+
+  --river: #2A6F8E;
+
+  --gold: #E3A73B;
+  --gold-deep: #B9822A;
+
+  --stamp: #A83A2A;
+
+  --display: "Big Shoulders Stencil", sans-serif;
+  --body: "Public Sans", sans-serif;
+  --mono: "IBM Plex Mono", monospace;
+}
