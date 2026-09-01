@@ -10,7 +10,6 @@ const loginButton =
   document.getElementById("loginButton");
 
 
-// Mostrar / ocultar contraseña
 togglePassword.addEventListener("click", () => {
   const isPassword =
     passwordInput.type === "password";
@@ -52,7 +51,7 @@ loginForm.addEventListener("submit", (event) => {
   // Validar correo
   if (!email) {
     emailError.textContent =
-      "Ingresa tu correo electrónico.";
+      "INGRESA TU CORREO ELECTRONICO.";
     emailInput.classList.add("input-error");
     valid = false;
   } else if (!emailInput.checkValidity()) {
