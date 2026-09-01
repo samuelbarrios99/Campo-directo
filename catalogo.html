@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo — CampoDirecto</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:wght@600;800&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/app-shell.css">
+<link rel="stylesheet" href="css/catalogo.css">
+</head>
+<body class="app-shell">
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="app-header">
+  <div class="wrap">
+    <a href="index.html" class="app-logo">CampoDirecto<span>.</span></a>
+    <nav class="app-nav">
+      <a href="catalogo.html" data-page="catalogo">Catálogo</a>
+      <a href="panel-productor.html" data-page="panel" data-role="productor">Panel del productor</a>
+    </nav>
+    <div class="app-user">
+      <span class="name" id="userName"></span>
+      <span class="role-pill" id="userRole"></span>
+      <button class="btn" id="logoutBtn">Cerrar sesión</button>
+    </div>
+  </div>
+</header>
+
+<main class="app-main">
+
+  <div class="page-head">
+    <span class="eyebrow">Atlántico · Oferta disponible</span>
+    <h1>Catálogo de productos</h1>
+    <p>Precio del productor a la vista, siempre. Filtra por categoría, municipio o busca directamente.</p>
+  </div>
+
+  <div class="filters">
+    <input type="text" id="buscar" placeholder="Buscar producto…" class="filter-input">
+    <select id="filtroCategoria" class="filter-select">
+      <option value="">Todas las categorías</option>
+    </select>
+    <select id="filtroMunicipio" class="filter-select">
+      <option value="">Todos los municipios</option>
+    </select>
+    <select id="orden" class="filter-select">
+      <option value="reciente">Más recientes</option>
+      <option value="precio-asc">Precio: menor a mayor</option>
+      <option value="precio-desc">Precio: mayor a menor</option>
+    </select>
+  </div>
+
+  <p class="results-count" id="resultsCount"></p>
+
+  <div class="product-grid" id="productGrid"></div>
+
+  <div class="empty-state" id="emptyState" hidden>
+    <p>No encontramos productos con esos filtros.</p>
+    <button class="btn" id="resetFilters">Quitar filtros</button>
+  </div>
+
+</main>
+
+<script src="js/session.js"></script>
+<script src="js/products.js"></script>
+<script src="js/catalogo.js"></script>
+</body>
+</html>

@@ -10,7 +10,6 @@ const loginButton =
   document.getElementById("loginButton");
 
 
-// Mostrar / ocultar contraseña
 togglePassword.addEventListener("click", () => {
   const isPassword =
     passwordInput.type === "password";
@@ -52,7 +51,7 @@ loginForm.addEventListener("submit", (event) => {
   // Validar correo
   if (!email) {
     emailError.textContent =
-      "Ingresa tu correo electrónico.";
+      "INGRESA TU CORREO ELECTRONICO.";
     emailInput.classList.add("input-error");
     valid = false;
   } else if (!emailInput.checkValidity()) {
@@ -86,22 +85,7 @@ loginForm.addEventListener("submit", (event) => {
     '<span>Verificando...</span><span class="loader"></span>';
 
 
-  /*
-    --------------------------------------------------
-    LOGIN DE PRUEBA - FRONTEND
-    --------------------------------------------------
 
-    Mientras CampoDirecto no tenga backend, la validación
-    se hace contra los usuarios que registro.js guarda en
-    localStorage ("campoDirectoUsuarios").
-
-    IMPORTANTE:
-    Esto NO debe utilizarse como autenticación
-    definitiva en producción. Cuando exista el backend
-    (Flask), esta comparación de correo/contraseña debe
-    hacerse en el servidor contra contraseñas hasheadas,
-    nunca en el navegador.
-  */
 
   setTimeout(() => {
     const usuarios =
@@ -154,13 +138,7 @@ loginForm.addEventListener("submit", (event) => {
       '<span>Sesión iniciada</span><span>✓</span>';
 
 
-    /*
-      Por ahora mostramos el éxito.
-      Más adelante cambiaremos esto por:
-
-      window.location.href =
-      "dashboard.html";
-    */
+    
   }, 1000);
 
 });
