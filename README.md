@@ -3,9 +3,17 @@ CampoDirecto es una plataforma digital diseñada para conectar directamente a pr
 ## Despliegue en AWS
 | Integrante | URL del sitio | Bucket publico | Bucket privado |
 |---|---|---|---|
-| Samuel Barrios | http://cuc-bp-equiposds-sitio-2026.s3-website-us-east-1.amazonaws.com/#  | cuc-bp-equiposds-sitio-2026 |
-cuc-bp-eqsds-barrios-privado-2026 |
+| Samuel Barrios | http://cuc-bp-equiposds-sitio-2026.s3-website-us-east-1.amazonaws.com/#  | cuc-bp-equiposds-sitio-2026 |cuc-bp-eqsds-barrios-privado-2026 |
+
+
+
+
+
+
+
+
 Se migro a AWS S3 para tener mayor control sobre la infraestructura en la nube, gestionar la seguridad mediante politicas de servicios e integrar el proyecto directamente dentro del ecosistema de Amazon Web Services 
+
 ¿Para que sirve el bucket privado?
 Se usa para guardar informacion sensible para archivos internos que no deben ser visibles en internet 
 ¿Para que sirve el bucket publico?
