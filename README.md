@@ -3,7 +3,7 @@ CampoDirecto es una plataforma digital diseñada para conectar directamente a pr
 ## Despliegue en AWS
 | Integrante | URL del sitio | Bucket publico | Bucket privado |
 |---|---|---|---|
-| Samuel Barrios | http://cuc-bp-equiposds-sitio-2026.s3-website-us-east-1.amazonaws.com/#  | cuc-bp-equiposds-sitio-2026 |cuc-bp-eqsds-barrios-privado-2026 |
+| Samuel Vega | http://cuc-bp-eq02-vega-sitio-2026.s3-website-us-east-1.amazonaws.com/#  | cuc-bp-eq02-vega-sitio-2026 |cuc-bp-eq02-vega-privado-2026 |
 
 
 
