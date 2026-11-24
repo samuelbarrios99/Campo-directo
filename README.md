@@ -100,7 +100,7 @@ Las pruebas de la API cubren las reglas de `src/logica/` e incluyen casos límit
 Publicado en:
 
 - **Front (S3):** _URL del sitio, [http://cuc-bp-equiposds-sitio-2026.s3-website-us-east-1.amazonaws.com](http://cuc-bp-equiposds-sitio-2026.s3-website-us-east-1.amazonaws.com) `_
-- **API (EC2):** _`http://<IP-pública>:3000/salud`_ (debe responder `{"estado":"ok"}`)
+- **API (EC2):** _`(http://18.209.65.197:3000)`_ (debe responder `{"estado":"ok"}`)
 
 Orden para volver a desplegar:
 
