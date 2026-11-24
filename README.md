@@ -93,13 +93,13 @@ Las pruebas de la API cubren las reglas de `src/logica/` e incluyen casos límit
 
 **Comprobar que las pruebas sirven:** en `api/src/logica/reglas-productos.js`, función `esNumeroDesde`, cambiar `numero >= minimo` por `numero > minimo` y correr `npm test`: la prueba "acepta el precio mínimo exacto de 1" debe fallar. Devolver el cambio después.
 
-**Revisión de dependencias (`npm audit`):** ejecutado en `api/` y en `front/`, ambos reportaron `found 0 vulnerabilities` (fecha de ejecución: _completar_). Se vuelve a ejecutar antes de entregar.
+**Revisión de dependencias (`npm audit`):** ejecutado en `api/` y en `front/`, ambos reportaron `found 0 vulnerabilities` (fecha de ejecución:24 de noviembre de 2026 ). Se vuelve a ejecutar antes de entregar.
 
 ## Despliegue
 
 Publicado en:
 
-- **Front (S3):** _URL del sitio, formato `http://<bucket>.s3-website-us-east-1.amazonaws.com`_
+- **Front (S3):** _URL del sitio, [http://cuc-bp-equiposds-sitio-2026.s3-website-us-east-1.amazonaws.com](http://cuc-bp-equiposds-sitio-2026.s3-website-us-east-1.amazonaws.com) `_
 - **API (EC2):** _`http://<IP-pública>:3000/salud`_ (debe responder `{"estado":"ok"}`)
 
 Orden para volver a desplegar:
